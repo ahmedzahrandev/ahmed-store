@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر العروض الحصرية</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif;}
+        body {background: #f5f5f5; color: #333;}
+        .header {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; text-align: center;}
+        .header h1 {font-size: 28px; margin-bottom: 5px;}
+        .banner {background: #ff4757; color: white; padding: 10px; text-align: center; font-weight: bold; animation: blink 1s infinite;}
+        @keyframes blink {0%, 100% {opacity: 1;} 50% {opacity: 0.7;}}
+        .container {max-width: 1200px; margin: 20px auto; padding: 0 15px;}
+        .products {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;}
+        .product {background: white; border-radius: 12px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;}
+        .product img {width: 100%; height: 200px; object-fit: cover; border-radius: 8px;}
+        .product h3 {margin: 15px 0 8px; font-size: 18px;}
+        .price {color: #ff4757; font-size: 24px; font-weight: bold; margin: 10px 0;}
+        .old-price {text-decoration: line-through; color: #999; font-size: 16px; margin-right: 10px;}
+        .btn {background: #25D366; color: white; padding: 12px 25px; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer; width: 100%; text-decoration: none; display: inline-block;}
+        .footer {background: #2f3542; color: white; text-align: center; padding: 20px; margin-top: 40px;}
+    </style>
+</head>
+<body>
+    <div class="banner">🔥 عرض اليوم: خصم 50% + شحن مجاني لكل مصر</div>
+    <div class="header">
+        <h1>متجر العروض الحصرية</h1>
+        <p>أفضل المنتجات بأرخص الأسعار</p>
+    </div>
+    <div class="container">
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400" alt="ساعة سمارت">
+                <h3>ساعة سمارت T900 Ultra</h3>
+                <p>شاشة كبيرة + قياس نبض + مقاومة للماء</p>
+                <div><span class="old-price">1200 ج.م</span><span class="price">599 ج.م</span></div>
+                <a href="https://wa.me/201055210850?text=عايز اطلب ساعة T900" class="btn">اطلب واتساب 📱</a>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=400" alt="ايربودز">
+                <h3>AirPods Pro الجيل الثالث</h3>
+                <p>عزل ضوضاء + بطارية 24 ساعة + مايك نقي</p>
+                <div><span class="old-price">900 ج.م</span><span class="price">449 ج.م</span></div>
+                <a href="https://wa.me/201000000000?text=عايز اطلب AirPods" class="btn">اطلب واتساب 📱</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>الدفع عند الاستلام | شحن لكل المحافظات | ضمان 14 يوم</p>
+        <p>للطلب: 01000000000</p>
+    </div>
+</body>
+</html>
